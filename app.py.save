@@ -1,0 +1,16 @@
+from flask import Flask
+import socket
+import multiprocessing
+
+multiprocessing.cpu_co)
+
+hostname = socket.gethostname()
+ip = socket.gethostbyname(socket.gethostname())
+hostname = hostname +"ip is : "+ str(ip)
+app= Flask(__name__)
+
+@app.route("/")
+
+def hello():
+	return "hostname is: %s " %hostname 
+	

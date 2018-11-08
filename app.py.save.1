@@ -1,0 +1,17 @@
+from flask import Flask
+import socket
+imimport virtual_memory
+
+hostname = socket.gethostname()
+ip = socket.gethostbyname(socket.gethostname())
+cpu = os.cpu_count()
+mem = virtual_memory()
+hostname = hostname +" ip is : "+ str(ip) +" cpu is : " + str(cpu) +" memmory is : "  + str(mem)
+
+app= Flask(__name__)
+
+@app.route("/")
+
+def hello():
+	return "hostname is: %s " %hostname 
+	
